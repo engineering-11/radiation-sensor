@@ -14,7 +14,7 @@ duration = 1000
 start_time = time.time()
 stop_time = start_time + duration
 while time.time() < stop_time:
-    if GPIO.event_detected(channel):
+    if GPIO.event_detected(11):
         print(time.time())
         timeStamps.append(time.time())
 

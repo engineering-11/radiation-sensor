@@ -10,6 +10,7 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.setup((11), GPIO.IN)
 GPIO.add_event_detect((11), GPIO.FALLING)
 TimeStamps = []
+duration = 1000
 Start_time = time.time()
 Stop_time = start_time + duration
 while time.time() < stop_time:

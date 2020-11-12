@@ -7,7 +7,7 @@ ermi#!/usr/bin/env python
 import time
 import RPi.GPIO as GPIO 
 GPIO.setmode(GPIO.BOARD)
-GPIO.setup((11), GPIO.IN)
+GPIO.setup((7), GPIO.IN)
 GPIO.add_event_detect((11), GPIO.FALLING)
 timeStamps = []
 duration = 1000

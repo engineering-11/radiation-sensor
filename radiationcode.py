@@ -6,6 +6,7 @@
 
 import time
 import RPi.GPIO as GPIO 
+GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup((11), GPIO.IN)
 GPIO.add_event_detect((11), GPIO.FALLING)

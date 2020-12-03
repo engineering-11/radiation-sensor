@@ -13,14 +13,13 @@ user_input = input()
 
 if (user_input == "Pi-0"):
     pin = 5
-    GPIO.setup((pin), GPIO.IN)
-    GPIO.add_event_detect((pin), GPIO.FALLING)
 elif (user_input == "Full-sizedPi"):
     pin = 17
-    GPIO.setup((pin), GPIO.IN)
-    GPIO.add_event_detect((pin), GPIO.FALLING)
 else:
     print("Nope!")
+    
+GPIO.setup((pin), GPIO.IN)
+GPIO.add_event_detect((pin), GPIO.FALLING)
 timeStamps = []
 duration = 200
 start_time = time.time()
